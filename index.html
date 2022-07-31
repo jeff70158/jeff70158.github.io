@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Cheng yu teng</title>
-        <!--<link rel="stylesheet" href="/css/home.css">-->
-        <style media="screen">
-            ul {
-                position: fixed;
-                top: 0;
-                right: 0;
+<html lang="en">
 
-                width: calc(100% - 40px);
-                height: 50px;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Cheng yu teng</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- FontAwasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-                margin: 20px;
-                padding: 0;
-                border-radius: 25px;
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yu-Teng, CHENG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> About me</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> Skills</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-file-code"></i> Projects</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-address-book"></i> Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- pagenav -->
+    <div id="pagenav-container">
+        <div id="pagenav-menu" class="d-flex flex-column justify-content-evenly ms-3 h-100">
+            <div class="pagenav-item d-flex align-items-center justify-content-center bg-900508"><i class="font-dark fa-solid fa-2x fa-house"></i></div>
+            <div class="pagenav-item d-flex align-items-center justify-content-center"><i class="font-dark fa-solid fa-2x fa-user"></i></div>
+            <div class="pagenav-item d-flex align-items-center justify-content-center"><i class="font-dark fa-solid fa-2x fa-book"></i></div>
+            <div class="pagenav-item d-flex align-items-center justify-content-center"><i class="font-dark fa-solid fa-2x fa-file-code"></i></div>
+            <div class="pagenav-item d-flex align-items-center justify-content-center"><i class="font-dark fa-solid fa-2x fa-address-book"></i></div>
+        </div>
+        <div id="pagenav">
+            
+        </div>
+    </div>
+    <!-- container -->
+    <div id="container" class="container-fluid px-0">
+        <div id="page1" class="page">
+            <div class="row mt-5 pt-2">
+                <div class="col-5 text-light p-0">
+                    <div class="h-100 d-flex align-items-center justify-content-center">
+                        <div class="px-5">
+                            <h1>鄭裕騰 (Yu-Teng, Cheng)</h1>
+                            <hr>
+                            <h4>程式設計師</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo incidunt, minus dolor
+                                debitis illum asperiores optio laudantium rerum enim provident, necessitatibus eligendi
+                                vel at unde nobis ratione dignissimos alias accusantium!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 text-light p-0">
+                    <div class="page1-photo"></div>
+                </div>
+            </div>
+        </div>
+        <div id="page2" class="page"></div>
+        <div id="page3" class="page"></div>
+        <div id="page4" class="page"></div>
+        <div id="page5" class="page"></div>
+    </div>
 
-                background-color: #23303d;
-                list-style-type: none;
-                overflow: hidden;
+    <!-- script -->
+    <script src="main.js"></script>
+</body>
 
-                animation-name:oxxo;
-                animation-duration:2s;
-                animation-fill-mode:forwards;
-            }
-            li {
-                float: right;
-                margin: 5px 20px;
-                height: 40px;
-                background-color: #395159;
-                border-radius: 2px;
-            }
-            li a {
-                text-decoration: none;
-                text-align: center;
-                font-size: 20px;
-                font-family: sans-serif;
-                color: #efefef;
-                padding: 10px 10px;
-                line-height: 40px;
-            }
-            @keyframes oxxo{
-                0%  { width: calc(100% - 40px); }
-                50% { width: 50px; height: 50px;}
-                100%{ width: 50px; height: calc(100% - 40px); }
-            }
-        </style>
-    </head>
-    <body>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contect Me</a></li>
-            </ul>
-    </body>
 </html>
