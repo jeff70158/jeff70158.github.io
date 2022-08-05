@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: monospace, PingFang, sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 #page-container {
@@ -19,6 +20,73 @@ html, body {
     background-color: rgb(47, 47, 74);
 
 }
+
+.debug {
+    border: 2px solid red;
+}
+
+/* RWD */
+/* 0px ~ 576px */
+@media screen and (max-width: 576px) {}
+
+/* 576px ~ 768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {}
+
+/* 768px ~ 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* 992px ~ 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* 992px ~ 1200px */
+@media screen and (min-width: 1200px) {
+
+    .page2-container {
+        padding-top: 15vh;
+    }
+
+    .photo-2 {
+        width: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    .square-500px {
+        width: 500px;
+        height: 500px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .github-stats {
+        width: 500px;
+    }
+
+    .most-use-language {
+        width: 500px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page1-photo {
     background-image: url("assets/images/1.png");
