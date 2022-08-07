@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#page-container {
+    padding: 0;
+    position: relative;
+    top: 0;
+    transition: all 1000ms ease;
+    touch-action: none;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 47, 74);
+
+}
+.page:nth-child(odd){
+    background-color: bisque;
+}
+
+.debug {
+    border: 2px solid red;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { }
+
+/*
+@media screen and (min-width: 1px) {
+    .page2-container {
+        padding-top: 15vh;
+    }
+
+    .photo-2 {
+        width: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    .square-500px {
+        width: 500px;
+        height: 500px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .github-stats {
+        width: 500px;
+    }
+
+    .most-use-language {
+        width: 500px;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page1-photo {
+    background-image: url("assets/images/1.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}

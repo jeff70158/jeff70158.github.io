@@ -25,128 +25,41 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Yu-Teng, CHENG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal"
+                data-bs-target="#navbar-menu" aria-controls="navbar-menu"
+                aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> About me</a>
-                    <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> Skills</a>
-                    <a class="nav-link" href="#"><i class="fa-solid fa-file-code"></i> Projects</a>
-                    <a class="nav-link" href="#"><i class="fa-solid fa-address-book"></i> Contact Me</a>
-                </div>
-            </div>
         </div>
     </nav>
+    <div class="modal fade" id="navbar-menu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- container -->
-    <div id="page-container" class="container-fluid">
-        <div class="page">
-            <div class="row h-100 text-light">
-                <div class="col-5">
-                    <div class="h-100 d-flex align-items-center justify-content-center">
-                        <div class="px-5">
-                            <h1>鄭裕騰 (Yu-Teng, Cheng)</h1>
-                            <hr>
-                            <h4>程式設計師</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo incidunt, minus dolor
-                                debitis illum asperiores optio laudantium rerum enim provident, necessitatibus eligendi
-                                vel at unde nobis ratione dignissimos alias accusantium!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="page1-photo"></div>
-                </div>
-            </div>
-        </div>
-        <!-- page 2 -->
-        <div class="page">
-            <div class="page2-container row">
-                <div class="col-12">
-                    <h1 class="text-light text-center">About me</h1>
-                </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <div class="square-500px">
-                            <img class="photo-2" src="assets/images/3.jpg" alt="photo2">
-                        <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit qui nostrum perferendis
-                            voluptatem iure ea quaerat odio porro sed voluptatum, provident facilis eos odit tempora
-                            ullam asperiores. Perspiciatis, delectus veritatis.</p>
-                    </div>
-
-                </div>
-                <div class="col-6">
-                    <div class="square-500px">
-                        <img class="github-stats"
-                            src="https://github-readme-stats.vercel.app/api?username=jeff70158&theme=tokyonight" />
-                        <img class="most-use-language"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeff70158&layout=compact&theme=tokyonight" />
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <!-- <div class="about-me-container">
-                <div class="row justify-content-center">
-                    <div class="col-12 mb-3">
-                        <h1 class="text-light text-center">About me</h1>
-                    </div>
-                    <div class="col-4 mb-3 d-flex justify-content-end">
-                        <div class="d-flex  mb-3 flex-column justify-content-between">
-                            <img class="photo-2" src="assets/images/5.jpg" alt="photo2">
-                            <div class="d-flex justify-content-between">
-                                <button class="btn btn-dark me-3"><i class="fa-brands fa-github"></i> Github</button>
-                                <button class="btn btn-dark"><i class="fa-solid fa-envelope"></i> Email</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <img class="github-stats"
-                            src="https://github-readme-stats.vercel.app/api?username=jeff70158&theme=tokyonight" />
-                        <img class="most-use-language"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeff70158&layout=compact&theme=tokyonight" />
-                    </div>
-                </div>
-            </div>-->
-
-            <!--
-            <div class="pt-5">
-            </div>
-            <div class="px-5">
-                <h1 class="pt-5 text-light text-center">About me</h1>
-                <div class="row justify-content-center debug">
-                    <div class="col-4">
-                        <img class="" src="assets/images/2.jpg" alt="">
-                    </div>
-                    <div class="col-8">
-                        <a href="https://github.com/jeff70158/jeff70158">
-                            <img src="https://github-readme-stats.vercel.app/api?username=jeff70158&theme=tokyonight" />
-                        </a>
-                        <a href="https://github.com/jeff70158/jeff70158">
-                            <img
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeff70158&layout=compact&theme=tokyonight" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        -->
-        </div>
+    <div id="page-container" class="">
+        <div class="page"></div>
+        <div class="page">2</div>
         <div class="page">3</div>
         <div class="page">4</div>
         <div class="page">5</div>
     </div>
-
     <!-- script -->
     <script src="main2.js"></script>
 </body>

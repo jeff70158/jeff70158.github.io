@@ -2,97 +2,54 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     font-family: 'Noto Sans TC', sans-serif;
+
 }
 
 #page-container {
-    padding: 0;
+    padding: 0%;
     position: relative;
     top: 0;
     transition: all 1000ms ease;
-    touch-action: none;
+    touch-action: auto;
 }
 
 .page {
     width: 100%;
     height: 100%;
-    background-color: rgb(47, 47, 74);
+    background-color: rgb(190, 190, 232);
 
+}
+.page:nth-child(odd){
+    background-color: bisque;
 }
 
 .debug {
     border: 2px solid red;
 }
 
-/* RWD */
-/* 0px ~ 576px */
-@media screen and (max-width: 576px) {}
-
-/* 576px ~ 768px */
-@media screen and (min-width: 576px) and (max-width: 768px) {}
-
-/* 768px ~ 992px */
-@media screen and (min-width: 768px) and (max-width: 992px) {}
-
-/* 992px ~ 1200px */
-@media screen and (min-width: 992px) and (max-width: 1200px) {}
-
-/* 992px ~ 1200px */
-@media screen and (min-width: 1200px) {
-
-    .page2-container {
-        padding-top: 15vh;
-    }
-
-    .photo-2 {
-        width: 200px;
-        border-radius: 50%;
-        align-self: center;
-    }
-
-    .square-500px {
-        width: 500px;
-        height: 500px;
-        margin-bottom: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        color: white;
-    }
-
-    .github-stats {
-        width: 500px;
-    }
-
-    .most-use-language {
-        width: 500px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.page1-photo {
-    background-image: url("assets/images/1.png");
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { }

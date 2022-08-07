@@ -1,5 +1,7 @@
 //將 container height 設為當前 window height
 var container = document.getElementById("page-container");
+//獲得 window width
+var window_width = document.documentElement.clientWidth;
 //獲得 window height
 var window_height = document.documentElement.clientHeight;
 //獲得頁面個數
@@ -41,16 +43,19 @@ function scrollMove(e) {
         goUp();
 }
 
-var wheel_func = wheelThrottle(scrollMove, 1000);
+if (window_width >= 768) {
+    var wheel_func = wheelThrottle(scrollMove, 1000);
 
-if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
-    //如果使用的不是firefox，進行這項設定
-    document.addEventListener("mousewheel", wheel_func);
-} else {
-    //否則進行這項設定
-    document.addEventListener("DOMMouseScroll", wheel_func);
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
+        //如果使用的不是firefox，進行這項設定
+        document.addEventListener("mousewheel", wheel_func);
+    } else {
+        //否則進行這項設定
+        document.addEventListener("DOMMouseScroll", wheel_func);
+    }
 }
 
+/*
 //手機端的設定
 var touch_start_y = 0;
 document.addEventListener("touchstart", (e) => {
@@ -66,3 +71,4 @@ function touchMove(e) {
 
 var touch_func = wheelThrottle(touchMove, 500);
 document.addEventListener('touchend', touch_func);
+*/
